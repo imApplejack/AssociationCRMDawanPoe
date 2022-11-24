@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace AssociationCRMDawanPoe.Entity
 {
 
-    public enum MenuState
+    public enum OrderState
     {
         Cancelled,
         Pending,
@@ -21,7 +21,10 @@ namespace AssociationCRMDawanPoe.Entity
 
         public List<Product> Products = new List<Product>();
 
-        public MenuState MenuState { get; set; } = MenuState.Pending;
+        public List<Menu> Menus = new List<Menu>();
+
+
+        public OrderState MenuState { get; set; } = OrderState.Pending;
    
     }
 }
