@@ -5,20 +5,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AssociationCRMDawanPoe.Service
+namespace AssociationCRMDawanPoe.Persistance.Menu_DAO
 {
-    public interface IMenuService
+    public interface IMenuDAO
     {
+        void Insert(Menu m);
+
         List<Menu> GetAll();
 
         Menu GetByName(string name);
 
-        void Add(Menu menu);
+        void Update(Menu m);
 
-        void Delete(string name);
-
-        void Update(Menu menu);
-
-
+        void Delete(Menu m);
     }
 }

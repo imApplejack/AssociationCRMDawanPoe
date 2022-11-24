@@ -13,5 +13,10 @@ namespace AssociationCRMDawanPoe.Entity
 
         public List<Product> products = new List<Product>();
 
+        public Menu(string name, List<Product> products)
+        {
+            Name = name;
+            this.products = products;
+        }
     }
 }

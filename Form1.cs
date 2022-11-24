@@ -1,22 +1,34 @@
-using AssociationCRMDawanLibrary;
+
 using AssociationCRMDawanPoe.Entity;
-using DawanConsole2.Class;
+using AssociationCRMDawanPoe.Persistance.Menu_DAO;
+using AssociationCRMDawanPoe.Service;
+
 
 namespace AssociationCRMDawanPoe
 {
     public partial class Form1 : Form
     {
+        readonly IMenuService _service;
         public Form1()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+
+            _service = new MenuServiceImpl(new MenuDAO());
+            buttonDel.Enabled = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
 
-            Product p = new Product() { Name = "p", Price = 8 , ProductCategory = ProductCategory.Plat};
-            p.Name = "dkjfl";
+        
+        }
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
