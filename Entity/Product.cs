@@ -14,5 +14,8 @@ namespace AssociationCRMDawanPoe.Entity
 
         //Commentaire test commit
         public int? B { get; set; } = null;
+
+        public int a { get; set; } = 0;
+
     }
 }
