@@ -8,7 +8,7 @@ namespace AssociationCRMDawanPoe.Entity
 {
     internal class Product
     {
-        public int Id { get; set; }
+        public int? Id { get; set; } = null;
 
         public string Name { get; set; } = "";
     }
