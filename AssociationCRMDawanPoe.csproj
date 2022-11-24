@@ -12,4 +12,9 @@
     <Folder Include="Persistance\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AssociationCRMDawanLibrary\AssociationCRMDawanLibrary.csproj" />
+    <ProjectReference Include="..\DawanConsole2\DawanConsole2.csproj" />
+  </ItemGroup>
+
 </Project>

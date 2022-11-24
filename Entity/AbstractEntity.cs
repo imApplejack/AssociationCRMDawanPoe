@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AssociationCRMDawanPoe.Service
+namespace AssociationCRMDawanPoe.Entity
 {
-    public interface IOrderService
+    public class AbstractEntity
     {
+           public int? Id { get; set; } = null;
     }
 }

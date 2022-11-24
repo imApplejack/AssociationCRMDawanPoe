@@ -6,16 +6,19 @@ using System.Threading.Tasks;
 
 namespace AssociationCRMDawanPoe.Entity
 {
-    internal class Product
+
+    public enum ProductCategory {
+        Boisson,
+        Plat,
+        Accompagnement,
+        Other
+    }
+
+    public class Product : AbstractEntity
     {
-        public int? Id { get; set; } = null;
+        public string Name { get; set; } = String.Empty;
+        public int Price { get; set; } = 0;
 
-        public string Name { get; set; } = "";
-
-        //Commentaire test commit
-        public int? B { get; set; } = null;
-
-        public int a { get; set; } = 0;
-
+        public ProductCategory ProductCategory = ProductCategory.Other;
     }
 }

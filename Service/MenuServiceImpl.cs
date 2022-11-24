@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace AssociationCRMDawanPoe.Service
 {
-    public interface IOrderService
+    public class MenuServiceImpl : IMenuService
     {
+        
+
     }
 }

@@ -6,14 +6,22 @@ using System.Threading.Tasks;
 
 namespace AssociationCRMDawanPoe.Entity
 {
-    public class Order
+
+    public enum MenuState
+    {
+        Cancelled,
+        Pending,
+        Payed,
+        Terminated
+    }
+    public class Order : AbstractEntity
     {
 
-        List<Product> products = null;
+        public string OrderName { get; set; } = string.Empty;
 
-        Order()
-        {
-            this.products = new List<Product>();
-        }
+        public List<Product> Products = new List<Product>();
+
+        public MenuState MenuState { get; set; } = MenuState.Pending;
+   
     }
 }

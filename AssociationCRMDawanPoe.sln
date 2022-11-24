@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssociationCRMDawanPoe", "AssociationCRMDawanPoe.csproj", "{D95DA021-0220-4255-BC1D-453A42E8886A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssociationCRMDawanPoe", "AssociationCRMDawanPoe.csproj", "{D95DA021-0220-4255-BC1D-453A42E8886A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssociationCRMDawanLibrary", "..\AssociationCRMDawanLibrary\AssociationCRMDawanLibrary.csproj", "{F295E813-39A6-4A71-9A49-475B995E63FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dawanConsole", "..\dawanConsole\dawanConsole.csproj", "{B90DB2C5-E6E1-482B-B72F-FEA14FA72522}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DawanConsole2", "..\DawanConsole2\DawanConsole2.csproj", "{61D5EB1F-D99B-4854-ADF8-BD464C76FA1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{D95DA021-0220-4255-BC1D-453A42E8886A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D95DA021-0220-4255-BC1D-453A42E8886A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D95DA021-0220-4255-BC1D-453A42E8886A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F295E813-39A6-4A71-9A49-475B995E63FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F295E813-39A6-4A71-9A49-475B995E63FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F295E813-39A6-4A71-9A49-475B995E63FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F295E813-39A6-4A71-9A49-475B995E63FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B90DB2C5-E6E1-482B-B72F-FEA14FA72522}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B90DB2C5-E6E1-482B-B72F-FEA14FA72522}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B90DB2C5-E6E1-482B-B72F-FEA14FA72522}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B90DB2C5-E6E1-482B-B72F-FEA14FA72522}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61D5EB1F-D99B-4854-ADF8-BD464C76FA1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61D5EB1F-D99B-4854-ADF8-BD464C76FA1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61D5EB1F-D99B-4854-ADF8-BD464C76FA1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61D5EB1F-D99B-4854-ADF8-BD464C76FA1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
