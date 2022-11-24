@@ -6,14 +6,10 @@ using System.Threading.Tasks;
 
 namespace AssociationCRMDawanPoe.Entity
 {
-    public class Order
+    internal class Product
     {
+        public int Id { get; set; }
 
-        List<Product> products = null;
-
-        Order()
-        {
-            this.products = new List<Product>();
-        }
+        public string Name { get; set; } = "";
     }
 }
