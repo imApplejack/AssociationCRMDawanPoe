@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AssociationCRMDawanPoe.Service
 {
-    internal class OrderServiceImpl : IOrderService
+    public class OrderServiceImpl : IOrderService
     {
     }
 }
