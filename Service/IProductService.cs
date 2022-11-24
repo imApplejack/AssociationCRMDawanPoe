@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AssociationCRMDawanPoe.Entity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,7 @@ namespace AssociationCRMDawanPoe.Service
 {
     public interface IProductService
     {
+        public List<Product> getAllProduct();
+
     }
 }
