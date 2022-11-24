@@ -1,6 +1,5 @@
-using AssociationCRMDawanLibrary;
+
 using AssociationCRMDawanPoe.Entity;
-using DawanConsole2.Class;
 
 namespace AssociationCRMDawanPoe
 {
