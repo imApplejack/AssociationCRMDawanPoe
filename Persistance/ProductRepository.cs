@@ -22,8 +22,6 @@ namespace AssociationCRMDawanPoe.Persistance
         public List<Product> getAll()
         {
 
-            var connection = new SqlConnection(this.ConnexionString);
-            var compiler = new SqlCompiler();
 
 
 
