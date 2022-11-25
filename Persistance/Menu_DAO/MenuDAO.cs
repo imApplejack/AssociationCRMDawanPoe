@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AssociationCRMDawanPoe.Persistance.Menu_DAO
 {
-    internal class MenuDAO : IMenuDAO
+    public class MenuDAO : IMenuDAO
     {
         private readonly List<Menu> _menus = new();
 
