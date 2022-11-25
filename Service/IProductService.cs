@@ -9,12 +9,22 @@ namespace AssociationCRMDawanPoe.Service
 {
     public interface IProductService
     {
+
+        List<Product> GetAll();
+
+        void UpdateProduct(Product p);
+
+        void Createproduct(Product p);
+
+
+        /*
         List<Product> FindByName(string name);
         List<Product> FindByCategory(string Category);
-        List<Product> GetAll();
+    
 
         public List<Product> getAllProduct();
         public List<string> GetAllCategory();
 
+        */
     }
 }

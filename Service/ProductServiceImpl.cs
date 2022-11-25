@@ -55,5 +55,15 @@ namespace AssociationCRMDawanPoe.Service
         };
 
         }
+
+        public void UpdateProduct(Product p)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Createproduct(Product p)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

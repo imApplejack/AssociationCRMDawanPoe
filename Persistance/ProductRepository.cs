@@ -15,11 +15,7 @@ namespace AssociationCRMDawanPoe.Persistance
         public ProductRepository(string connexionString) : base(connexionString)
         {
 
-
-
-
         }
-
 
         public void Create(Product p)
         {
@@ -54,8 +50,5 @@ namespace AssociationCRMDawanPoe.Persistance
             }
             return retour;
         }
-
-
-
     }
 }
