@@ -17,7 +17,7 @@ namespace AssociationCRMDawanPoe.Entity
     public class Product : AbstractEntity
     {
         public string Name { get; set; } = String.Empty;
-        public int Price { get; set; } = 0;
+        public double Price { get; set; } = 0;
 
         public ProductCategory ProductCategory = ProductCategory.Other;
     }
