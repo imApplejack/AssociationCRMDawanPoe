@@ -1,4 +1,5 @@
 ﻿using AssociationCRMDawanPoe.Entity;
+using SqlKata.Compilers;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -24,6 +25,7 @@ namespace AssociationCRMDawanPoe.Persistance
 
 
 
+            var connection = new SqlConnection(this.ConnexionString);
 
             return new List<Product>();
         }
