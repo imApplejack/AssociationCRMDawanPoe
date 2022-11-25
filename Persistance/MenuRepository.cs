@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace AssociationCRMDawanPoe.Persistance
 {
-    public class ProductRepository : AbstractRepository
+    public class MenuRepository : AbstractRepository
     {
-        public ProductRepository(string connexionString) : base(connexionString)
+        public MenuRepository(string connexionString) : base(connexionString)
         {
         }
 

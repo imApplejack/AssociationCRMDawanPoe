@@ -5,6 +5,11 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssociationCRMDawanPoe", "AssociationCRMDawanPoe.csproj", "{D95DA021-0220-4255-BC1D-453A42E8886A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsMenu", "..\WinFormsMenu\WinFormsMenu.csproj", "{52B8B08B-7742-4E58-A021-25E32F136642}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D95DA021-0220-4255-BC1D-453A42E8886A} = {D95DA021-0220-4255-BC1D-453A42E8886A}
+	EndProjectSection
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderForm", "..\OrderForm\OrderForm.csproj", "{627CA4EA-AD3A-4D92-9DC8-1BCED2E69086}"
 EndProject
 Global
@@ -17,6 +22,10 @@ Global
 		{D95DA021-0220-4255-BC1D-453A42E8886A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D95DA021-0220-4255-BC1D-453A42E8886A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D95DA021-0220-4255-BC1D-453A42E8886A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52B8B08B-7742-4E58-A021-25E32F136642}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52B8B08B-7742-4E58-A021-25E32F136642}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52B8B08B-7742-4E58-A021-25E32F136642}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52B8B08B-7742-4E58-A021-25E32F136642}.Release|Any CPU.Build.0 = Release|Any CPU
 		{627CA4EA-AD3A-4D92-9DC8-1BCED2E69086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{627CA4EA-AD3A-4D92-9DC8-1BCED2E69086}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{627CA4EA-AD3A-4D92-9DC8-1BCED2E69086}.Release|Any CPU.ActiveCfg = Release|Any CPU

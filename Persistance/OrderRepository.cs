@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace AssociationCRMDawanPoe.Persistance
 {
-    public class ProductRepository : AbstractRepository
+    public class OrderRepository : AbstractRepository
     {
-        public ProductRepository(string connexionString) : base(connexionString)
+        public OrderRepository(string connexionString) : base(connexionString)
         {
         }
-
-
     }
 }

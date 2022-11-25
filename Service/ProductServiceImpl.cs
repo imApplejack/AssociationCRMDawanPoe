@@ -32,5 +32,9 @@ namespace AssociationCRMDawanPoe.Service
         {
             throw new NotImplementedException();
         }
+        public List<Product> getAllProduct()
+        {
+           return new List<Product>() { new Product() { Id = 0, Name = "Kebab", Price=1, ProductCategory = ProductCategory.Plat}, new Product() { Id = 1, Name = "Burger", Price = 10 , ProductCategory = ProductCategory.Plat  }, new Product() { Id = 2, Name = "Coca", Price = 10 , ProductCategory = ProductCategory.Boisson } };
+        }
     }
 }
