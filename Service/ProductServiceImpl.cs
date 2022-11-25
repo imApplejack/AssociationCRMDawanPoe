@@ -1,9 +1,4 @@
 ﻿using AssociationCRMDawanPoe.Entity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AssociationCRMDawanPoe.Service
 {
@@ -34,7 +29,31 @@ namespace AssociationCRMDawanPoe.Service
         }
         public List<Product> getAllProduct()
         {
-           return new List<Product>() { new Product() { Id = 0, Name = "Kebab", Price=1, ProductCategory = ProductCategory.Plat}, new Product() { Id = 1, Name = "Burger", Price = 10 , ProductCategory = ProductCategory.Plat  }, new Product() { Id = 2, Name = "Coca", Price = 10 , ProductCategory = ProductCategory.Boisson } };
+            return new List<Product>() {
+               new Product() {Id = 0, Name = "Kebab", Price=1, ProductCategory = ProductCategory.Plat},
+               new Product() { Id = 1, Name = "Burger", Price = 10 , ProductCategory = ProductCategory.Plat  },
+               new Product() { Id = 2, Name = "Cola", Price = 3 , ProductCategory = ProductCategory.Boisson },
+               new Product() { Id =3 ,Name = "Limonade", ProductCategory = ProductCategory.Boisson, Price = 3 },
+               new Product() { Id =4, Name = "Eau", ProductCategory = ProductCategory.Boisson, Price = 2 },
+               new Product() { Id =5, Name = "Galette", ProductCategory = ProductCategory.Plat, Price = 6 },
+               new Product() { Id =6, Name = "Tacos", ProductCategory = ProductCategory.Plat, Price = 6 },
+               new Product() { Id =7, Name = "Frites", ProductCategory = ProductCategory.Accompagnement, Price = 3 },
+               new Product() { Id =8, Name = "Semoule", ProductCategory = ProductCategory.Accompagnement, Price = 2 }
+
+
+            };
+        }
+        public List<string> GetAllCategory()
+        {
+            return new List<string>()
+            {
+                ProductCategory.Boisson.ToString(),
+                ProductCategory.Plat.ToString(),
+                ProductCategory.Accompagnement.ToString(),
+                ProductCategory.Other.ToString(),
+
+        };
+
         }
     }
 }

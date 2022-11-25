@@ -12,8 +12,9 @@ namespace AssociationCRMDawanPoe.Service
         List<Product> FindByName(string name);
         List<Product> FindByCategory(string Category);
         List<Product> GetAll();
-        
+
         public List<Product> getAllProduct();
+        public List<string> GetAllCategory();
 
     }
 }
