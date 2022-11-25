@@ -16,6 +16,8 @@ namespace AssociationCRMDawanPoe.Service
 
         void Createproduct(Product p);
 
+        void RemoveProductById(int id);
+
 
         /*
         List<Product> FindByName(string name);

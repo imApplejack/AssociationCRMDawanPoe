@@ -40,6 +40,12 @@ namespace AssociationCRMDawanPoe.Persistance
             });
         }
 
+        public void RemoveById(int id)
+        {
+            int affected = this.EntityManager.Query("Product").Where("Id", id).Delete();
+        }
+
+
         public List<Product> GetAll()
         {
              List<Product> retour = new List<Product>();

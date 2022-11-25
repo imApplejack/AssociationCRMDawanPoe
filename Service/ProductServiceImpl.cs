@@ -19,9 +19,16 @@ namespace AssociationCRMDawanPoe.Service
            return this.ProductRepository.GetAll();
         }
 
+        public void RemoveProductById(int id)
+        {
+            this.ProductRepository.RemoveById(id);
+        }
+
         public void UpdateProduct(Product p)
         {
             this.ProductRepository.Update(p);
         }
+
+
     }
 }
