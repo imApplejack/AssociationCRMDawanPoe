@@ -23,8 +23,6 @@ namespace AssociationCRMDawanPoe.Persistance
 
         public void Create(Product p)
         {
-
-            //@todo probleme clé primaire
             int affected = this.EntityManager.Query("Product").Insert(new
             {
                 Name = p.Name,
@@ -34,7 +32,6 @@ namespace AssociationCRMDawanPoe.Persistance
             });
             p.Id = affected;
         }
-
 
         public void Update(Product p)
         {
@@ -57,6 +54,7 @@ namespace AssociationCRMDawanPoe.Persistance
             }
             return retour;
         }
+
 
 
     }
