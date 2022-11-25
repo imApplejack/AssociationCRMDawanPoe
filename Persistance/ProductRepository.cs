@@ -1,5 +1,6 @@
 ﻿using AssociationCRMDawanPoe.Entity;
 using SqlKata.Compilers;
+using SqlKata.Execution;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -20,15 +21,43 @@ namespace AssociationCRMDawanPoe.Persistance
         }
 
 
-        public List<Product> getAll()
+        public void Create(Product p)
         {
 
+            //@todo probleme clé primaire
+            int affected = this.EntityManager.Query("Product").Insert(new
+            {
+                Name = p.Name,
+                Price = p.Price,
+                ProductCategory = p.ProductCategory
 
-
-            var connection = new SqlConnection(this.ConnexionString);
-
-            return new List<Product>();
+            });
+            p.Id = affected;
         }
+
+
+        public void Update(Product p)
+        {
+            int affected = this.EntityManager.Query("Product").Where("Id", p.Id).Update(new
+            {
+                Name = p.Name,
+                Price = p.Price,
+                ProductCategory = p.ProductCategory
+
+            });
+        }
+
+        public List<Product> GetAll()
+        {
+             List<Product> retour = new List<Product>();
+             var products = this.EntityManager.Query("Product").Get<Product>();
+            foreach (Product product in products)
+            {
+                retour.Add(product);
+            }
+            return retour;
+        }
+
 
     }
 }
