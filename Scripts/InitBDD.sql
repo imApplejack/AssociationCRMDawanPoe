@@ -1,33 +1,22 @@
-USE master;
-
-DROP DATABASE IF EXISTS AssociationCrm;
-CREATE DATABASE AssociationCrm;
+USE [CRM]
 GO
-
-USE AssociationCrm;
-
-
---   public string Name { get; set; } = String.Empty;
-  --      public double Price { get; set; } = 0;
-
-    --    public ProductCategory ProductCategory = ProductCategory.Other;
-
-CREATE TABLE Product (
-  Id INT NOT NULL IDENTITY,
-  Name VARCHAR(40) NOT NULL,
-  Price FLOAT DEFAULT NULL,
-  ProductCategory INT DEFAULT NULL,
-  PRIMARY KEY (id)
-);
+/****** Object:  Table [dbo].[Product]    Script Date: 25/11/2022 14:19:01 ******/
+SET ANSI_NULLS ON
 GO
-
-
-INSERT INTO Product (Name,Price,ProductCategory) VALUES
-('coca',1.5, 1),
-('burger',15.5, 1)
-
-
-select * from Product
-
---drop table Product;
---GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Product](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [varchar](40) NOT NULL,
+	[Price] [float] NULL,
+	[ProductCategory] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Product] ADD  DEFAULT (NULL) FOR [Price]
+GO
+ALTER TABLE [dbo].[Product] ADD  DEFAULT (NULL) FOR [ProductCategory]
+GO
