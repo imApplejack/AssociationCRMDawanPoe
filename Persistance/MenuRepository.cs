@@ -30,6 +30,23 @@ namespace AssociationCRMDawanPoe.Persistance
         }
 
 
+        public void Create(Menu m)
+        {
+            int affected = this.EntityManager.Query("Menu").Insert(new
+            {
+                Name = m.Name
+            });
+            m.Id = affected;
+            foreach (Product product in m.products)
+            {
+                this.EntityManager.Query("Menu_Product").Insert(new
+                {
+                    MenuId = m.Id,
+                    ProductId = product.Id
+                });
+            }
+        }
+
         public void Update(Menu m)
         {
             int affected = this.EntityManager.Query("Menu").Where("Id", m.Id).Update(new
