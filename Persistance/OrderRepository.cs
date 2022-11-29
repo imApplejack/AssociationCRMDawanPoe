@@ -10,6 +10,9 @@ namespace AssociationCRMDawanPoe.Persistance
     {
         public OrderRepository(string connexionString) : base(connexionString)
         {
+
+
+            // @todo mais c'est du copier coller de menu
         }
     }
 }
