@@ -25,7 +25,7 @@ namespace AssociationCRMDawanPoe.Entity
         public List<Menu> Menus = new List<Menu>();
 
 
-        public OrderState MenuState { get; set; } = OrderState.Pending;
+        public OrderState OrderState { get; set; } = OrderState.Pending;
 
         public void AddProductToOrder(Product product)
         {
