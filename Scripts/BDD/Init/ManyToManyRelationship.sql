@@ -1,7 +1,6 @@
 --  requete clunky mais fonctionelle
 
 
-
 CREATE TABLE Menu_Product (
     MenuId int NOT NULL,
     ProductId int NOT NULL,

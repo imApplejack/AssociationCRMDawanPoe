@@ -45,6 +45,11 @@ namespace AssociationCRMDawanPoe.Persistance
             int affected = this.EntityManager.Query("Product").Where("Id", id).Delete();
         }
 
+        public Product GetById(int id)
+        {
+            return this.EntityManager.Query("Product").Where("Id", id).Get<Product>().First();
+        }
+
 
         public List<Product> GetAll()
         {
